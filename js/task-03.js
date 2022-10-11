@@ -16,9 +16,9 @@ const gallery = document.querySelector(".gallery");
 const listArt = [];
 
 for (let i = 0; i < images.length; i++) {
-
-      listArt.push(`<li class="gallary__iteam"><img class="gallary__foto" src="${images[i].url}" alt="${images[i].alt}"></li>`) 
-     
+  listArt.push(
+    `<li class="gallary__iteam"><img class="gallary__foto" src="${images[i].url}" alt="${images[i].alt}"></li>`
+  );
 }
 
- gallery.insertAdjacentHTML("beforeend", listArt.join(''))
+gallery.insertAdjacentHTML("beforeend", listArt.join(""));
