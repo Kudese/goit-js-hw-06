@@ -16,14 +16,9 @@ const gallery = document.querySelector(".gallery");
 const listArt = [];
 
 for (let i = 0; i < images.length; i++) {
-  const liGallery = document.createElement("li");
-  liGallery.classList.add("gallary__iteam");
-  const iteamLi = document.createElement("img");
-  iteamLi.classList.add("gallary__foto");
-  iteamLi.src = images[i].url;
-  iteamLi.alt = images[i].alt;
-  liGallery.append(iteamLi);
-  listArt.push(liGallery);
+
+      listArt.push(`<li class="gallary__iteam"><img class="gallary__foto" src="${images[i].url}" alt="${images[i].alt}"></li>`) 
+     
 }
 
-gallery.append(...listArt);
+ gallery.insertAdjacentHTML("beforeend", listArt.join(''))

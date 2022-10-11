@@ -14,7 +14,7 @@ buttonDestroidBox.addEventListener("click", onDestrodbox);
 function createBoxes(amount) {
   let listBox = [];
   createPlace.innerHTML = "";
-  console.log(numberBoxCreate.value);
+
   for (let i = 0; i < numberBoxCreate.value; i++) {
     const iteamBox = document.createElement("div");
     iteamBox.style.width = `${30 + 10 * i}px`;
